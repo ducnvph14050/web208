@@ -1,0 +1,57 @@
+{
+  "products": [
+    {
+      "name": "Designing Dashboards",
+      "price": "Dashboard",
+      "soluong": "11",
+      "status": true,
+      "id": 22,
+      "subject": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    },
+    {
+      "name": "36 Days of Malayalam type",
+      "price": "Dashboard",
+      "soluong": "11",
+      "status": true,
+      "id": 23,
+      "subject": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    },
+    {
+      "name": "Vibrant Portraits of 2020",
+      "price": "Dashboard",
+      "subject": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "status": true,
+      "id": 24
+    }
+  ],
+  "users": [
+    {
+      "email": "vtqn10102002@gmail.com",
+      "password": "$2a$10$uqWnGvUvN1B2cyPcwbCMQOa5TlVKASvFsaoJomoE8s8CLd2spbGDW",
+      "username": "ducmtph140908",
+      "role": 0,
+      "id": 6
+    },
+    {
+      "email": "ngem0895@gmail.com",
+      "password": "$2a$10$Rp2KkPYJ3LSY4h8p.ZaEM.df7lI7Cz1AfzfQGdupCA8JPKF37y.0.",
+      "username": "ducmtph1409",
+      "role": 0,
+      "id": 7
+    },
+    {
+      "email": "ducmtph14090@fpt.edu.vn",
+      "password": "$2a$10$K.tF9veL1l.pUbVvHzADVeSYbYeOYFUUNjKUp9kZUWFxgkTAm2pzy",
+      "username": "ducmtph14090",
+      "role": 0,
+      "id": 1
+    },
+    {
+      "email": "djitlozvietanh@gmail.com",
+      "password": "$2a$10$8Y/HwirUDzp2dLe9rAVlo.HkZURTMT5Zftd8WZ/84SclLgwGOpSCy",
+      "username": "djitloz vietanh",
+      "role": 0,
+      "id": 8
+    }
+  ]
+}

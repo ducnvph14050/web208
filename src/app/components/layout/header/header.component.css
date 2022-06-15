@@ -1,0 +1,36 @@
+.menu {
+
+    position: relative;
+    overflow: hidden;
+  }
+  .topnav-right {
+    float: right;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .row {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+  }
+
+  .h1 {
+    font-size: 55px;
+  }
+
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .avt {
+    margin: 0 auto;
+    float: right;
+    box-shadow: 0 4px 8px 0 rgba(34, 32, 32, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .row {
+    box-shadow: 0 4px 8px 0 rgba(116, 116, 116, 0.2), 0 6px 20px 0 rgba(204, 204, 204, 0.19);
+  }

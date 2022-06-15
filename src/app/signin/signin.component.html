@@ -1,0 +1,70 @@
+<!-- <p>Dang Nhap!</p>
+<section class="login">
+
+    <form  (ngSubmit)="onSubmit()" #formAdd="ngForm">
+        <h3>login now</h3>
+        <input type="email" name="email" placeholder="enter your email" [(ngModel)]="user.email" id="" class="box">
+        <input type="password" name="password" placeholder="enter your password" [(ngModel)]="user.password" id="" class="box">
+        <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> remember me </label>
+        </div>
+        <input type="submit" value="login now" class="btn">
+        <p>don't have an account?</p>
+        <a href="register" class="btn link">register now</a>
+    </form>
+
+</section> -->
+
+
+<div class="content-wrapper">
+    <div class="content">
+        <div class="signup-wrapper shadow-box">
+            <div class="company-details ">
+
+                <div class="shadow"></div>
+                <div class="wrapper-1">
+                    <div class="logo">
+                        <div class="icon-food">
+
+                        </div>
+                    </div>
+                    <h1 class="title">cupcake co.</h1>
+                    <div class="slogan">We deliver cupcakes to you.</div>
+                </div>
+
+            </div>
+            <div class="signup-form ">
+                <div class="wrapper-2">
+                    <div class="form-title">Sign up today!</div>
+                    <div class="form">
+                        <form (ngSubmit)="onSubmit()" #formAdd="ngForm">
+                           
+
+                            <p class="content-item">
+                                <label>email address
+                                    <input type="text" placeholder="lorem@loremipsum.com" name="email" [(ngModel)]="user.email"  required>
+                                </label>
+                            </p>
+
+                            <p class="content-item">
+
+                                <label>password
+                                    <input type="password" placeholder="*****" name="password"[(ngModel)]="user.password"  required>
+                                </label>
+                            </p>
+                            <br>
+                            <input type="submit" value="login now" class="btn" style="color: red ;">
+                            <a href="/login" class="login">Signup</a>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">

@@ -1,0 +1,125 @@
+<app-header></app-header>
+
+
+<div class="container">
+  <section class="grid grid-cols-3 :  p-20 gap-11 : mt-10 :  px-44 : container">
+    <div class="mt-6 : col-span-2 ">
+      <h1 class="font-bold : " style="font-size: 47px;  color: #21243D;">
+        Hi.I am Đức
+      </h1>
+
+      <h1 class="font-bold : " style="font-size: 47px;  color: #21243D;">
+        FornEnd-Developer
+      </h1>
+
+      <div class="mt-9">
+        <p class="text-base" style=" color: #21243D;">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor
+          do amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam .
+        </p>
+
+        <button
+          class="border p-3  text-white : mt-4 : hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ..."
+          style="width: 50%;border-radius: 5px; background-color: #FF6464;">Download Resume</button>
+      </div>
+
+    </div>
+    <div class="mt-2 : boxed">
+      <img class="avt" src="https://nguoinoitieng.tv/images/nnt/103/1/bgvw.jpg" alt="" width="290" style="border-radius: 300px;">
+    </div>
+  </section>
+  <section class="px-44 :  group-hover:stroke-white : " style="background-color: #EDF7FA ;">
+    <div class="topnav">
+      <div class="flex ">
+
+        <h1 style="margin-top: 20px; font-size: 23px; ">Recent posts</h1>
+        <h1 style="margin-top: 25px; margin-left: auto; font-size: 16px; color: #00A8CC;">View all</h1>
+      </div>
+      <div class="grid grid-cols-2 gap-11 : mt-5 ">
+        <div class="row ">
+
+          <h3 class="font-bold : text-xl :" style="font-size: 28px; color: #21243D;">
+            Making a desgin systemform
+            scratch
+          </h3>
+          <nav class="mt-8" style=" color: #21243D;">
+
+            <script>var myVar=setInterval(function(){myTimer()},1000); function myTimer() {var d=new Date(); var t=d.toLocaleTimeString(); document.getElementById("h").innerHTML=t;}</script>
+                <span id="h"></span>
+                <script type="text/javascript">
+                n=new Date();if(n.getTimezoneOffset()==0)t=n.getTime()+(7*60*60*1000);else t=n.getTime();n.setTime(t);var dn=new Array("Chủ nhật","Thứ 2","Thứ 3","Thứ 4","Thứ 5","Thứ 6","Thứ 7");d=n.getDay();m=n.getMonth()+1;y=n.getFullYear()
+                document.write(dn[d]+", "+(n.getDate()<10?"0":"")+n.getDate()+"/"+(m<10?"0":"")+m+"/"+y)
+                </script>
+          </nav>
+          <div class="mt-8">
+            <p style="font-size: 16px;  color: #21243D;">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+              enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </p>
+
+          </div>
+        </div>
+        <div class="row">
+          <h3 class="font-bold : text-xl" style="font-size: 28px;  color: #21243D;">
+            Making a desgin systemform <br>
+            scratch
+          </h3>
+          <nav class="mt-8" style=" color: #21243D;">
+
+            <span id="h"></span>
+            <script type="text/javascript">
+              n = new Date(); if (n.getTimezoneOffset() == 0) t = n.getTime() + (7 * 60 * 60 * 1000); else t = n.getTime(); n.setTime(t); var dn = new Array("Chủ nhật", "Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7"); d = n.getDay(); m = n.getMonth() + 1; y = n.getFullYear()
+              document.write(dn[d] + ", " + (n.getDate() < 10 ? "0" : "") + n.getDate() + "/" + (m < 10 ? "0" : "") + m + "/" + y)
+            </script>
+          </nav>
+          <div class="mt-8">
+            <p style="font-size: 16px;  color: #21243D;">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+              enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:30px ;">
+      <br>
+    </div>
+  </section>
+
+  <nz-table #basicRow [nzData]="data">
+    <article class="px-44 : ">
+      <div class="mt-3 :  ">
+        <h1 style="margin-top:  20px; font-size: 23px; ">Featured works</h1>
+        <div *ngFor="let data of basicRow.data ;" class=" grid grid-cols-3 : mt-5">
+          <div>
+            <a routerLink="/detailProduct/{{data.id}}">
+              <img src="https://khoaquan.vn/wp-content/uploads/2019/10/nen-mua-laptop-van-phong-loai-nao.jpg" alt="" width="270"
+                style="border-radius: 10px ;  box-shadow: 0 4px 8px 0 rgba(51, 51, 51, 0.2), 0 6px 20px 0 rgba(68, 67, 67, 0.19);">
+            </a>
+  
+          </div>
+          <div class="ml-8 :  col-span-2">
+            <h1 class="font-bold : text-xl :" style="font-size: 28px; color: #21243D;"> {{data.name}}</h1>
+            <nav class="flex : mt-3">
+              <button class="border p-2 bg-red-500 text-white "
+                style="border-radius: 40px ; padding: 0 10px;">2020</button>
+              <h2 style="margin-left: 20px ; margin-top: 10px;">{{data.price}}</h2>
+            </nav>
+            <div class="mt-4">
+              <p>
+                {{data.subject}}
+              </p>
+            </div>
+          </div>
+          <div class="mt-5">
+            <hr width="300%">
+          </div>
+        </div>
+      </div>
+      <br>
+    </article>
+  </nz-table>
+</div>
+  <app-footer></app-footer>

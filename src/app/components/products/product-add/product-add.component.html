@@ -1,0 +1,63 @@
+<nz-table>
+
+    <tbody>
+        <div class="container">
+            <form  #addForm="ngForm" (ngSubmit)="onSubmit()">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text"  name="firstname" placeholder="Your name.." [(ngModel)]="product.name"  #name="ngModel"
+                        required
+                        minlength="7"
+                        >
+                            <p *ngIf="name.errors?.['required']" style="color: red ;">* Không được để trống !</p>
+                            <p *ngIf="name.errors?.['minlength']" style="color: red ;">* Kí tự phải lớn hơn 7 !</p>                                  
+                    </div>
+                </div>
+               
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." [(ngModel)]="product.price"  #price="ngModel"  required >
+                        <p *ngIf="price.errors?.['required']" style="color: red ;">* Không được để trống !</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                       
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px" [(ngModel)]="product.subject"  required>
+                        </textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" value="Submit" [disabled]="!addForm.valid">
+                </div>
+              
+            </form>
+        </div>
+
+    </tbody>
+
+
+</nz-table>

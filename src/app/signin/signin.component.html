@@ -29,32 +29,36 @@
 
                         </div>
                     </div>
-                    <h1 class="title">cupcake co.</h1>
-                    <div class="slogan">We deliver cupcakes to you.</div>
+                    <h1 class="title">Welcome</h1>
+                    <div class="slogan">G2 Esport</div>
                 </div>
 
             </div>
             <div class="signup-form ">
                 <div class="wrapper-2">
-                    <div class="form-title">Sign up today!</div>
+                    <div class="form-title">Signin</div>
                     <div class="form">
                         <form (ngSubmit)="onSubmit()" #formAdd="ngForm">
-                           
+
 
                             <p class="content-item">
                                 <label>email address
-                                    <input type="text" placeholder="lorem@loremipsum.com" name="email" [(ngModel)]="user.email"  required>
+                                    <input type="text" placeholder="lorem@loremipsum.com" name="email" [(ngModel)]="user.email" #email="ngModel"  required  >
+                                   
                                 </label>
+
                             </p>
+                            <p *ngIf="email.errors?.['required']" style="color: red ;">* Not !</p>
 
                             <p class="content-item">
 
                                 <label>password
-                                    <input type="password" placeholder="*****" name="password"[(ngModel)]="user.password"  required>
+                                    <input type="password" placeholder="*****" name="password"[(ngModel)]="user.password" #password="ngModel"  required>
                                 </label>
                             </p>
+                            <p *ngIf="email.errors?.['required']" style="color: red ;">* Not !</p>
                             <br>
-                            <input type="submit" value="login now" class="btn" style="color: red ;">
+                            <input type="submit" value="login now" class="btn" style="color: red ;" [disabled]="!formAdd.valid">
                             <a href="/login" class="login">Signup</a>
                         </form>
                     </div>

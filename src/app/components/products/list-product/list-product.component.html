@@ -1,46 +1,45 @@
-
 <nz-layout class="inner-layout" style="text-align: center ;">
-  
-        <nz-table #basicTable [nzData]="data" style="text-align: center ;">
-          <thead>
+
+    <nz-table #basicTable [nzData]="data" style="text-align: center ;">
+        <thead>
             <tr style="text-align: center ;">
-              <th  style="text-align: center ;">id</th>
-              <th  style="text-align: center ;">Name</th>
-              <th  style="text-align: center ;">Age</th>
-              <th  style="text-align: center ;">Img</th>
-              <th  style="text-align: center ;">Address</th>
-              <th  style="text-align: center ;">Action</th>
+                <th style="text-align: center ;">#id</th>
+                <th style="text-align: center ;">Name</th>
+                <th style="text-align: center ;">Age</th>
+                <th style="text-align: center ;">Playing Position</th>
+                <th style="text-align: center ;">Img</th>
+                <th style="text-align: center ;">Action</th>
             </tr>
-          </thead>
-          <tbody>
+        </thead>
+        <tbody>
             <tr *ngFor="let data of basicTable.data ; let i = index" style="text-align: center ;">
-              <th scope="row">{{i + 1}}</th>
-              <td>{{data.name}}</td>
-              <td>{{data.price}}</td>
-              <td>{{data.subject}}</td>
-              <td>
-                <img nz-image width="100" height="100" src="https://khoaquan.vn/wp-content/uploads/2019/10/nen-mua-laptop-van-phong-loai-nao.jpg">
-              </td>
-              
-  
-              <td>
-                <button nz-button nzType="primary" (click)="onHandelRemove(data.id!)" style="width: 48% ;">Xóa</button>
-                <button nz-button nzType="default" style="width: 45% ;">
+                <th scope="row">{{i + 1}}</th>
+                <td>{{data.name}}</td>
+                <td>{{data.price}}</td>
+                <td>{{data.subject}}</td>
+                <td>
+                    <img nz-image width="100" height="100" src="https://licensinginternational.org/wp-content/uploads/2020/05/redeye.png">
+                </td>
+
+
+                <td>
+                    <button nz-button nzType="default" (click)="onHandelRemove(data.id!)" style="width: 48% ;">Delete</button>
+                    <button nz-button nzType="default" style="width: 45% ;">
                   <a routerLink="/admin/product/add/{{data.id}}">Edit</a>
                 </button>
-              
-          <!-- <a [routerLink]="['add',data.id]">Edit</a> -->
-          <nz-divider nzType="vertical"></nz-divider>
-              </td>
+
+                    <!-- <a [routerLink]="['add',data.id]">Edit</a> -->
+                    <nz-divider nzType="vertical"></nz-divider>
+                </td>
             </tr>
-           
-          </tbody>
-         
-          
-        </nz-table>
-        <div>
-          <button nz-button nzType="primary" style="width: 100% ;">
-            <a routerLink="product/add">Thêm Sản Phẩm</a>
+
+        </tbody>
+
+
+    </nz-table>
+    <div>
+        <button nz-button nzType="primary" style="width: 100% ;">
+            <a routerLink="product/add">New Player</a>
             </button>
-        </div>
-      </nz-layout>
+    </div>
+</nz-layout>

@@ -36,6 +36,7 @@ import { SigninComponent } from './signin/signin.component';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { BlogPageComponent } from './components/blog-page/blog-page.component';
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
+import { AddComponent } from './add/add.component';
 
 
 
@@ -58,7 +59,8 @@ registerLocaleData(en);
         LoginComponent,
         SigninComponent,
         BlogPageComponent,
-        ContactPageComponent
+        ContactPageComponent,
+        AddComponent
        
   ],
   imports: [

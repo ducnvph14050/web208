@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
          alert("Register Successfully !");
         
          // chuyển hướng tới login
-         this.route.navigateByUrl("/login");
+         this.route.navigateByUrl("/signin");
          
        })
       
